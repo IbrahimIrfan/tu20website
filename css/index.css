@@ -1,0 +1,223 @@
+/* Containers */
+.head{
+  height: 100vh !important;
+}
+.section {
+  height: 80vh !important;
+}
+.transition, .footer{
+  height: 50vh !important;
+}
+.bgimgWrapper {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* General Properties */
+.fadeIn{
+	opacity:0;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* Backgrounds */
+.firstBG{
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('file:///Users/ibrahimirfan/Desktop/tu20draft/img/placeholder.jpg') no-repeat center center fixed;
+}
+.secondBG{
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('file:///Users/ibrahimirfan/Desktop/tu20draft/img/placeholder2.jpg') no-repeat center center fixed;
+}
+.footerBG{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('file:///Users/ibrahimirfan/Desktop/tu20draft/img/placeholder2.jpg') no-repeat center center fixed;
+}
+/*'*/
+
+/* First section */
+#bgTitleText {
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    font-size: 100px;
+    font-family: sans-serif;
+    bottom: 0;
+    padding-bottom: 50px;
+    padding-left: 25px;
+}
+#downArrowWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.header {
+    background-color: white;
+    color: #61B329;
+    font-weight: 600;
+    font-size: 45px;
+    font-family: sans-serif;
+}
+
+/* Second section (who are we, what is SH) */
+.tab{
+  display: inline-block;
+  position: absolute;
+  font-weight: 500;
+  font-size: 35px;
+  font-family: sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tab:hover{
+  cursor: pointer;
+}
+#tab1 {
+    color: #61B329;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 50%;
+    -webkit-border-radius: 0px 99px 0px 0px;
+    -moz-border-radius: 0px 99px 0px 0px;
+    border-radius: 0px 99px 0px 0px;
+    z-index: 2;
+}
+#tab2 {
+    color: white;
+    background-color: #61B329;
+    text-align: right;
+    right: 0;
+    width: 60%;
+    -webkit-border-radius: 99px 0px 0px 0px;
+    -moz-border-radius: 99px 0px 0px 0px;
+    border-radius: 99px 0px 0px 0px;
+    z-index: 1;
+}
+#tab2 div{
+  padding-right: 25%;
+}
+#title {
+    padding-top: 14vh;
+    padding-left: 100px;
+}
+.header img {
+    margin-top: 10vh;
+    padding-left: 100px;
+    width: 35%;
+}
+.SH{
+  opacity: 0;
+}
+.SH, .TU20{
+  position: absolute;
+}
+#TU20Blurb, #SHBlurb{
+  margin-top: 13vh;
+  margin-left: 50%;
+  margin-right: 10%;
+  color: black;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+/* Contact Us Section */
+#contactTitle{
+  position: relative;
+  font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+.connectButton{
+  padding-top: 5vh;
+  position: absolute;
+  z-index: 5;
+}
+#facebookIcon{
+  padding-left: 30%;
+}
+#twitterIcon{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+#instaIcon{
+  right: 0;
+  padding-right: 30%;
+}
+#emailUs{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding-top: 25vh;
+}
+
+/* Meet the team section */
+#meetTheTeamTitle{
+  position: relative;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  color: #61B329;
+  font-weight: 600;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+.headshot{
+  display: inline-block;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 4vh;
+  position: relative;
+}
+.headshot img{
+  width: 175px;
+   border-radius: 50%;
+}
+.overlay{
+  background-color: black;
+  border-radius: 50%;
+}
+#ellaPicture, #ibrahimPicture{
+  padding-left: 0% !important;
+}
+figcaption{
+  position: relative;
+  padding-top: 1vh;
+  color: #007f00;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: sans-serif;
+}

@@ -41,22 +41,27 @@ $(document).on("ready", function() {
         }, 1000);
     }
 
+    function checkFade(){
+      $('.fadeIn').each(function(i) {
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          if (bottom_of_window > bottom_of_object && $(this).css("opacity") == "0") {
+              fadeInAnimation($(this));
+              $(this).removeClass("fadeIn");
+          }
+      });
+    }
+
     /*          */
     /*   MAIN   */
     /*          */
+    checkFade()
     $('.parallax').parallax();
 
     // on window scroll, fade item if in view
     $(window).scroll(function() {
-        $('.fadeIn').each(function(i) {
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if (bottom_of_window > bottom_of_object && $(this).css("opacity") == "0") {
-                fadeInAnimation($(this));
-                $(this).removeClass("fadeIn");
-            }
-        });
+      checkFade();
     });
 
     // green arrow on hover, else white
@@ -68,36 +73,7 @@ $(document).on("ready", function() {
 
     // scroll to second section if arrow clicked
     $('#downArrow').on("click", function() {
-        scrollToAnchor($('.second'));
+        scrollToAnchor($('.section'));
     });
 
-    // tab functionality (second section)
-    $('.tab').on("click", function(elem){
-      tabClicked = $(elem.currentTarget);
-      tabNotClicked = $(".tab[tabId = " + ($(elem.currentTarget).attr("tabId") * -1) + "]");
-      contentIn = $('.' + tabClicked.attr("name"));
-      contentOut = $('.' + tabNotClicked.attr("name"));
-      if (contentOut.css('opacity') != "0"){
-        switchOverlap(tabClicked, tabNotClicked);
-        fadeInAnimation(contentIn);
-        contentOut.animate({
-            opacity: "0"
-        }, 100);
-      }
-    });
-
-    $('.connectButton a img').hover(
-        function() {
-            $(this).css("cursor", "pointer");
-            if ($(this).css("width") == "100px"){
-            $(this).animate({
-                "width": 110
-            }, 500);
-          }
-        },
-        function() {
-            $(this).animate({
-                "width": 100
-            }, 500);
-        });
 });

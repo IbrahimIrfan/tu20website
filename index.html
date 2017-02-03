@@ -4,73 +4,62 @@
 <head>
     <title>TU20</title>
     <link rel="stylesheet" type="text/css" href="css/index.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/menu.css"></link>
 </head>
 
 <body style="margin: 0;">
-    <div class="parallax-container head bgimgWrapper">
-        <div class="parallax"><img src="file:///Users/ibrahimirfan/Desktop/tu20website/img/placeholder.jpg"> </div>
+    <div id='cssmenu'>
+        <ul>
+            <li class="active"><a href='#'><span>TU20</span></a></li>
+            <li><a href='#ourInitiatives'><span>Initiatives</span></a></li>
+            <li><a href='#meetTheTeamWrapper'><span>Team</span></a></li>
+            <li><a href='#contactTitle'><span>Contact</span></a></li>
+        </ul>
     </div>
 
+        <div class="parallax-container head bgimgWrapper">
+            <div class="parallax"><img src="img/placeholder.jpg"> </div>
+        </div>
+
     <div id="bgTitleText" class="fadeIn">
-        TECH
-        <br> UNDER
-        <br> TWENTY.
+        TechUnder20
     </div>
+
+    <div class="fadeIn" id="TU20Blurb">
+        A supportive and helpful tech/business community of youth under the age of 20.
+        <br><br>
+        We as a division of Silicon Halton - the grassroots technology community of people who
+        make a living, make meaning, and make things happen in Halton.<br>
+        <a href="" target="_blank" class="action-button">BECOME A TU20</a>
+
+    </div>
+
     <div id="downArrowWrapper">
         <center>
             <img id="downArrow" src="img/icons/whiteArrow.png">
         </center>
     </div>
 
-    <div class="section second">
+    <div class="section" id="aboutUs">
+        <div class="fadeIn subtitle">About Us</div>
+        <center>
+          <video placeholder="img/logoPlaceholder.png" width="50%" controls><source src="img/TU20video.mp4" type="video/mp4"></video>
+          </center>
+  </div>
 
-        <div class="tab" id="tab1" tabId="1" name="TU20">TU20</div>
-        <div class="tab" id="tab2" tabId="-1" name="SH">
-            <div>Silicon Halton</div>
-        </div>
-
-        <div class="header">
-
-            <div id="title">
-                <div class="fadeIn TU20">Who are we?</div>
-                <div class="SH">What is Silicon Halton?</div>
-            </div>
-
-            <img class="fadeIn TU20" src="img/TU20Group.jpg" align="left">
-
-            <div class="fadeIn TU20" id="TU20Blurb">
-                TU20 works as a division of Silicon Halton - we are a supportive
-                and helpful tech/business community of youth under the age of 20.<br><br>
-                We hold events and workshops to help our new generation, the rising stars.
-            </div>
-
-            <img class="SH" src="img/SHImg.jpg" align="left">
-
-            <div class="SH" id="SHBlurb">
-              Silicon Halton is the grassroots technology community of people who
-              make a living, make meaning, and make things happen in technology in Halton Region.
-              <br><br>Everything we do and stand for is based on our three pillars:
-              Technology, Community, and Growth.
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- TODO Our Initiatives
-    <div class="parallax-container transition bgimgWrapper">
-          <div class="parallax"><img src="file:///Users/ibrahimirfan/Desktop/tu20website/img/placeholder2.jpg"> </div>
-    </div>
-
-    <div class="section">
-    </div> -->
-
-    <!-- TODO Meet the team -->
     <div class="transition bgimgWrapper firstBG">
     </div>
 
-    <div class="section">
-        <div class="fadeIn" id="meetTheTeamTitle">
+    <div class="section" id="ourInitiatives">
+        <div class="fadeIn subtitle">Our Initiatives</div>
+        <div class="initiatives"></div>
+    </div>
+
+    <div class="transition bgimgWrapper firstBG">
+    </div>
+
+    <div class="section" id="meetTheTeamWrapper">
+        <div class="fadeIn subtitle">
             Meet The Team
         </div>
         <center>
@@ -122,16 +111,14 @@
 
     <!-- TODO Contact us -->
     <div class="footer bgimgWrapper footerBG">
-        <div class="fadeIn" id="contactTitle">CONTACT US</div>
+        <div class="fadeIn" id="contactTitle">Contact Us</div>
 
         <div class="fadeIn connectButton" id="facebookIcon">
             <a href="https://www.facebook.com/techundertwentyprograms/"><img src="img/icons/facebookIcon.png" width="100"></a>
         </div>
-
         <div class="fadeIn connectButton" id="twitterIcon">
             <a href="https://twitter.com/techundertwenty"><img src="img/icons/twitterIcon.png" width="100"></a>
         </div>
-
         <div class="fadeIn connectButton" id="instaIcon">
             <a href="https://www.instagram.com/techunder20/"><img src="img/icons/instagramIcon.png" width="100"></a>
         </div>
@@ -139,14 +126,13 @@
         <div id="emailUs" class="fadeIn">
             techundertwenty@gmail.com
         </div>
-
-
     </div>
 
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/materialize.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/initiatives.js" type="text/javascript"></script>
 </body>
 
 

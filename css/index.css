@@ -17,6 +17,19 @@
   }
 }
 
+@keyframes teamShadow {
+    from {
+    -webkit-box-shadow: 0 0px 0px 0px #cacaca;
+    -moz-box-shadow: 0 0px 0px 0px #cacaca;
+    box-shadow: 0 0px 0px 0px #cacaca;
+  }
+    to {
+      -webkit-box-shadow: 0 0px 0px 0px #A1A1A1;
+      -moz-box-shadow: 0 0px 0px 0px #A1A1A1;
+      box-shadow: 0 0px 8px 5px #A1A1A1;
+  }
+}
+
 
 /* Containers */
 
@@ -90,9 +103,9 @@ body {
     -webkit-transition: all 0.1s;
     color: #FFF;
     text-decoration: none;
-    background-color: #000080;
-    border-bottom: 7.5px solid #000059;
-    text-shadow: 0px -2px #000059;
+    background-color: #FD5004;
+    border-bottom: 7.5px solid #a13302;
+    text-shadow: 0px -2px #a13302;
     top: 75px;
 }
 .action-button:hover{
@@ -100,19 +113,19 @@ body {
       transform: translate(0px, 7.5px);
       -webkit-transform: translate(0px, 7.5px);
       top: 80px;
-      border-bottom: 1px solid #000059;
+      border-bottom: 1px solid #a13302;
 }
 
 /* Backgrounds */
 
 .firstBG {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('file:///Users/ibrahimirfan/Desktop/Code/tu20website/img/placeholder.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/placeholder.jpg') no-repeat center center fixed;
 }
 .secondBG {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('file:///Users/ibrahimirfan/Desktop/Code/tu20website/img/placeholder2.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/placeholder.jpg') no-repeat center center fixed;
 }
 .footerBG {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('file:///Users/ibrahimirfan/Desktop/Code/tu20website/img/placeholder2.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/placeholder.jpg') no-repeat center center fixed;
 }
 
 /*'*/
@@ -175,7 +188,7 @@ video{
   margin-left: 10%;
 }
 #initDescWrapper{
-  height: 250px;
+  height: 220px;
 }
 #initDesc{
   margin-top: 35px;
@@ -204,12 +217,21 @@ video{
     padding-bottom: 4vh;
     position: relative;
 }
+.bio {
+  color: #007f00;
+  width: 175px;
+  font-size: 15px;
+  position: absolute;
+}
+.headshot img:hover{
+  cursor: pointer;
+  animation-name: teamShadow;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+}
 .headshot img {
     width: 175px;
-    border-radius: 50%;
-}
-.overlay {
-    background-color: black;
     border-radius: 50%;
 }
 #ellaPicture, #ibrahimPicture {

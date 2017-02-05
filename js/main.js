@@ -18,20 +18,6 @@ $(document).on("ready", function() {
         });
     }
 
-    // bring one element forward and send the other back (change colors as well)
-    function switchOverlap(one, two) {
-        one.css({
-            "z-index": 2,
-            color: "#61B329",
-            backgroundColor: "#FFFFFF"
-        });
-        two.css({
-            "z-index": 1,
-            color: "#FFFFFF",
-            backgroundColor: "#61B329"
-        });
-    }
-
     // move slightly up while fading into view
     function fadeInAnimation(elem) {
         elem.css("top", "+=20px");
@@ -75,5 +61,4 @@ $(document).on("ready", function() {
     $('#downArrow').on("click", function() {
         scrollToAnchor($('.section'));
     });
-
 });

@@ -39,6 +39,7 @@ $(document).on("ready", function() {
       });
     }
 
+
     /*          */
     /*   MAIN   */
     /*          */
@@ -61,4 +62,14 @@ $(document).on("ready", function() {
     $('#downArrow').on("click", function() {
         scrollToAnchor($('.section'));
     });
+
+    $('#ctaBtn').on("click", function(){
+      $.fancybox({
+          href: '#joinPopup',
+          width: 400,
+          autoDimensions: false,
+          autoSize: false
+      });
+    });
+
 });
